@@ -59,4 +59,4 @@ jobs:
         script: |
           docker stop aposta
           docker rm --force aposta
-          docker run -d -p 8080:8080 --network=rede --name aposta leosfreitas/aposta-ci:${{ github.sha }}
+          docker run -d -p 8080:8080 --network=rede --name aposta leosfreitas/aposta:${{ github.sha }}
