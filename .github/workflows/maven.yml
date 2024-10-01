@@ -60,3 +60,4 @@ jobs:
           docker stop aposta
           docker rm --force aposta
           docker run -d -p 8081:8081 --network=rede --name aposta tpenha05/aposta:${{ github.sha }}
+          
